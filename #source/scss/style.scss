@@ -1,0 +1,24 @@
+@import 'fonts.scss';
+
+@import 'nullstyle.scss';
+
+body {
+   font-family: 'Objective';
+   font-style: normal;
+}
+
+.wrapper {
+   height: 100%;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+@import './blocks/about.scss';
+
+@import './blocks/help.scss';
+
+@import './blocks/works.scss';
+
+@import './blocks/say.scss';
+
+@import './blocks/footer.scss';

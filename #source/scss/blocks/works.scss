@@ -1,0 +1,70 @@
+@import '../_media.scss';
+
+.works {
+   background: rgba(74, 153, 211, 0.1);
+   box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.08);
+
+   &__container {
+      max-width: 950px;
+      padding: 95px 0;
+      margin: 0 auto;
+
+      @include media($screen-works-l) {
+         padding: 50px 0 0 0;
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 27px;
+      text-align: center;
+      color: #4a99d3;
+      padding-bottom: 88px;
+
+      @include media($screen-works-l) {
+         padding-bottom: 50px;
+      }
+   }
+
+   &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      @include media($screen-works-m) {
+         flex-direction: column;
+      }
+   }
+
+   &__card {
+      @include media($screen-works-l) {
+         padding-bottom: 50px;
+      }
+   }
+
+   &__icon {
+      padding-bottom: 34px;
+
+      @include media($screen-works-m) {
+         padding-bottom: 25px;
+      }
+   }
+
+   &__sub-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+      color: #0f001a;
+      padding-bottom: 10px;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #0f001a;
+   }
+}

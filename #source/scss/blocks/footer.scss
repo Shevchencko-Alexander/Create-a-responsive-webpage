@@ -1,0 +1,199 @@
+@import '../_media.scss';
+
+.footer {
+   background: #4a99d3;
+   box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.08);
+
+   &__main {
+      padding: 58px 20px 29px;
+
+      @include media($screen-footer-m) {
+         padding: 50px 20px 20px;
+      }
+   }
+
+   &__container {
+      max-width: 1192px;
+      margin: 0 auto;
+      display: flex;
+
+      @include media($screen-footer-l2) {
+         flex-wrap: wrap;
+         justify-content: space-around;
+         text-align: center;
+      }
+
+      @include media($screen-footer-s2) {
+         & :nth-child(3) {
+            order: 1;
+         }
+
+         & :nth-child(5) {
+            order: 2;
+         }
+      }
+   }
+
+   &__logo {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 35px;
+      color: #ffffff;
+      margin-right: 146px;
+
+      @include media($screen-footer-l2) {
+         margin: 0 60px;
+      }
+
+      @include media($screen-footer-s) {
+         margin: 0 300px;
+      }
+   }
+
+   &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+      color: #ffffff;
+      margin-bottom: 34px;
+      white-space: nowrap;
+
+      &::after {
+         content: '';
+         display: block;
+         height: 2px;
+         width: 95%;
+         background-color: #ffffff;
+      }
+
+      &-first {
+         margin-right: 60px;
+      }
+
+      &-second {
+         margin-right: 152px;
+      }
+
+      &-third {
+         margin-right: 79px;
+      }
+
+      @include media($screen-footer-l2) {
+         margin: 0 40px 34px;
+      }
+
+      @include media($screen-footer-s) {
+         margin: 30px 20px 34px;
+      }
+   }
+
+   &__list {
+      & :last-child {
+         margin-bottom: 0;
+      }
+
+      & li {
+         margin-bottom: 18px;
+      }
+   }
+
+   &__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: #ffffff;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      max-width: 364px;
+
+      @include media($screen-footer-l2) {
+         margin: 29px auto 20px;
+      }
+   }
+
+   &__email {
+      width: 268px;
+      height: 50px;
+      background: #ffffff;
+      border-radius: 3px;
+      padding: 18px 10px 16px;
+      margin-right: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+
+      @include media($screen-footer-l) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__button {
+      width: 116px;
+      height: 50px;
+      background: #ffffff;
+      border-radius: 3px;
+      padding: 16px 16px 14px;
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 17px;
+      color: #4a99d3;
+   }
+
+   &__form {
+      @include media($screen-footer-l) {
+         text-align: center;
+      }
+   }
+
+   &__info {
+      padding: 23px 20px;
+      border-top: 1px solid #ffffff;
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1192px;
+      margin: 0 auto;
+
+      @include media($screen-footer-s2) {
+         flex-direction: column;
+
+         & :last-child {
+            order: -1;
+         }
+      }
+   }
+
+   &__copyright {
+      font-weight: 700;
+      font-size: 10.41px;
+      line-height: 11px;
+      color: #ffffff;
+   }
+
+   &__icons {
+      & li {
+         display: inline-block;
+         margin-left: 20px;
+      }
+
+      @include media($screen-footer-s2) {
+         margin-bottom: 10px;
+
+         & li {
+            margin: 0 10px;
+         }
+      }
+   }
+}

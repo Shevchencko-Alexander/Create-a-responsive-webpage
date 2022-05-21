@@ -1,0 +1,197 @@
+@import '../_media.scss';
+
+.help {
+   position: relative;
+   z-index: 1;
+   background: #ffffff;
+   padding-top: 150px;
+   box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.08);
+
+   @include media($screen-help-l2) {
+      padding-top: 50px;
+   }
+
+   &__arrow {
+      margin-left: 19px;
+      margin-top: 6px;
+   }
+
+   &__dot {
+      position: absolute;
+      z-index: 3;
+
+      @include media($screen-help-l2) {
+         display: none;
+      }
+
+      &-one {
+         top: 525px;
+         left: -20px;
+      }
+
+      &-two {
+         top: -67px;
+         right: -77px;
+      }
+
+      &-three {
+         bottom: 75px;
+         right: -75px;
+      }
+   }
+
+   &__icon {
+      position: absolute;
+
+      &-blue {
+         right: 0;
+         top: 0;
+
+         @include media($screen-help-l) {
+            display: none;
+         }
+
+         @include media($screen-help-m) {
+            display: inline;
+         }
+
+         @include media($screen-help-m2) {
+            display: none;
+         }
+      }
+
+      &-orange {
+         bottom: 0;
+
+         @include media($screen-help-m2) {
+            display: none;
+         }
+      }
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      max-width: 950px;
+      margin: 0 auto;
+      z-index: 2;
+
+      @include media($screen-help-m) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__item {
+      position: relative;
+      z-index: 3;
+   }
+
+   &__title {
+      position: relative;
+      z-index: 4;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: 1.3px;
+      color: #260041;
+      margin-bottom: 170px;
+      max-width: 395px;
+
+      @include media($screen-help-m) {
+         margin: 0 auto 50px auto;
+         text-align: center;
+      }
+
+      @include media($screen-help-s) {
+         font-size: 30px;
+      }
+   }
+
+   &__card {
+      position: relative;
+      z-index: 4;
+      max-width: 380px;
+      max-height: 525px;
+      box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+      border-radius: 10px;
+      padding: 48px;
+      background-color: #ffffff;
+
+      @include media($screen-help-s2) {
+         padding: 24px;
+      }
+
+      &-one {
+         margin-left: 85px;
+      }
+
+      &-two {
+         margin-top: 12px;
+         margin-bottom: 113px;
+      }
+
+      &-three {
+         margin-bottom: 150px;
+
+         @include media($screen-help-l2) {
+            margin-bottom: 50px;
+         }
+      }
+
+      @include media($screen-help-m) {
+         margin: 0 20px 50px;
+      }
+   }
+
+   &__img {
+      margin-bottom: 56px;
+      max-width: 100%;
+      max-height: 100%;
+
+      &-one {
+         margin-left: 6px;
+      }
+
+      &-two {
+         margin-top: -70px;
+         margin-left: 30px;
+      }
+
+      &-three {
+         margin-left: 52px;
+      }
+
+      @include media($screen-help-s2) {
+         display: block;
+         margin: -5px auto 10px auto;
+      }
+   }
+
+   &__sub-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: #0f001a;
+      margin-bottom: 16px;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #0f001a;
+      opacity: 0.6;
+      margin-bottom: 62px;
+   }
+
+   &__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: #4a99d3;
+   }
+}

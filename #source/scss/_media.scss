@@ -1,0 +1,34 @@
+@mixin media($screen-x) {
+   @media (max-width: $screen-x) {
+      @content;
+   }
+}
+
+$screen-about-l: 1265px;
+$screen-about-l2: 1105px;
+$screen-about-m: 1000px;
+$screen-about-s: 530px;
+$screen-about-s2: 430px;
+
+$screen-footer-l: 1228px;
+$screen-footer-l2: 1157px;
+$screen-footer-m: 1105px;
+$screen-footer-s: 770px;
+$screen-footer-s2: 461px;
+
+$screen-help-l: 1265px;
+$screen-help-l2: 1105px;
+$screen-help-m: 1000px;
+$screen-help-m2: 795px;
+$screen-help-s: 530px;
+$screen-help-s2: 435px;
+
+$screen-say-l: 1350px;
+$screen-say-l2: 1105px;
+$screen-say-m: 1045px;
+$screen-say-m2: 845px;
+$screen-say-s: 690px;
+$screen-say-s2: 470px;
+
+$screen-works-l: 1105px;
+$screen-works-m: 795px;

@@ -1,0 +1,31 @@
+@font-face {
+   font-family: 'Objective';
+   src: url('../fonts/Objective/Objective-Regular.eot');
+   src: local('☺'),
+      url('../fonts/Objective/Objective-Regular.woff') format('woff'),
+      url('../fonts/Objective/Objective-Regular.ttf') format('truetype'),
+      url('../fonts/Objective/Objective-Regular.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Objective';
+   src: url('../fonts/Objective/Objective-Medium.eot');
+   src: local('☺'),
+      url('../fonts/Objective/Objective-Medium.woff') format('woff'),
+      url('../fonts/Objective/Objective-Medium.ttf') format('truetype'),
+      url('../fonts/Objective/Objective-Medium.svg') format('svg');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Objective';
+   src: url('../fonts/Objective/Objective-Bold.eot');
+   src: local('☺'), url('../fonts/Objective/Objective-Bold.woff') format('woff'),
+      url('../fonts/Objective/Objective-Bold.ttf') format('truetype'),
+      url('../fonts/Objective/Objective-Bold.svg') format('svg');
+   font-weight: 700;
+   font-style: normal;
+}
